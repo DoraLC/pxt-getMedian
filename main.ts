@@ -28,12 +28,12 @@ namespace median {
      * Get analog median reading. The larger the sample size is, the more time this will take to finish. 
      * @param size sample size; eg: 50, 20, 60, 100
      */
-    //%block="get analog median reading size %size|pin %argpin"
+    //%block="get analog median reading size %size|pin %pinarg"
     //%pinarg.fieldEditor="gridpicker" pinarg.fieldOptions.columns=5
-    export function medianAnalog(size: number, argpin: AnalogPin): number {
+    export function medianAnalog(size: number, pinarg: AnalogPin): number {
         let array: number[] = []
         for (let i = 0; i < size; i++) {
-            array[i] = pins.analogReadPin(argpin)
+            array[i] = pins.analogReadPin(pinarg)
             basic.pause(10)
         }
         return getMedian(array)
