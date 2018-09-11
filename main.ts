@@ -26,7 +26,7 @@ namespace median {
 
     /**
      * Get analog median reading. The larger the sample size is, the more time this will take to finish. 
-     * @parm size sample size; eg: 50, 20, 60, 100
+     * @param size sample size; eg: 50, 20, 60, 100
      */
     //%block="get analog median reading size %size|pin %argpin"
     //%pinarg.fieldEditor="gridpicker" pinarg.fieldOptions.columns=5
