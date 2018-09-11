@@ -1,4 +1,4 @@
-//%color=#04B404 icon="\uf162" block="median"
+//%color=#B40431 icon="\uf162" block="median"
 
 namespace median {
     function getMedian(bArray: number[]): number {
